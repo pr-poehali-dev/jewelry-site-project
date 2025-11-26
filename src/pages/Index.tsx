@@ -8,19 +8,43 @@ const Index = () => {
       id: 1,
       name: "Кольцо Луна",
       price: "4 500 ₽",
-      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/4b6cc4ee-8cd5-4db7-bded-f8f513aa146a.jpg"
+      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/4b6cc4ee-8cd5-4db7-bded-f8f513aa146a.jpg",
+      category: "Кольца"
     },
     {
       id: 2,
       name: "Серьги Перламутр",
       price: "3 200 ₽",
-      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/a3499390-b9a0-410f-9332-4061dace1734.jpg"
+      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/a3499390-b9a0-410f-9332-4061dace1734.jpg",
+      category: "Серьги"
     },
     {
       id: 3,
       name: "Колье Принцесса",
       price: "8 900 ₽",
-      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/ea053663-7a3c-495b-aeb8-5a2d70cc5c98.jpg"
+      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/ea053663-7a3c-495b-aeb8-5a2d70cc5c98.jpg",
+      category: "Колье"
+    },
+    {
+      id: 4,
+      name: "Браслет Нежность",
+      price: "5 700 ₽",
+      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/41c6a75f-96d5-4492-a86d-e185af02740b.jpg",
+      category: "Браслеты"
+    },
+    {
+      id: 5,
+      name: "Кольцо Элегант",
+      price: "4 200 ₽",
+      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/17c22deb-de95-451a-ba58-a7b894fd9fbf.jpg",
+      category: "Кольца"
+    },
+    {
+      id: 6,
+      name: "Серьги Звёздочки",
+      price: "2 900 ₽",
+      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/a3499390-b9a0-410f-9332-4061dace1734.jpg",
+      category: "Серьги"
     }
   ];
 
@@ -42,6 +66,50 @@ const Index = () => {
     }
   ];
 
+  const process = [
+    {
+      icon: "Palette",
+      title: "Эскиз",
+      description: "Прорисовка дизайна будущего украшения"
+    },
+    {
+      icon: "Hammer",
+      title: "Создание",
+      description: "Ручная работа мастера над изделием"
+    },
+    {
+      icon: "Gem",
+      title: "Огранка",
+      description: "Добавление камней и финальная обработка"
+    },
+    {
+      icon: "Package",
+      title: "Упаковка",
+      description: "Красивая подарочная упаковка для вас"
+    }
+  ];
+
+  const blog = [
+    {
+      title: "Как выбрать украшение под ваш стиль",
+      date: "15 ноября 2024",
+      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/4b6cc4ee-8cd5-4db7-bded-f8f513aa146a.jpg",
+      excerpt: "Разбираемся, какие украшения подойдут для разных образов"
+    },
+    {
+      title: "Уход за ювелирными изделиями",
+      date: "10 ноября 2024",
+      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/17c22deb-de95-451a-ba58-a7b894fd9fbf.jpg",
+      excerpt: "Советы по хранению и чистке ваших любимых украшений"
+    },
+    {
+      title: "Тренды сезона 2024",
+      date: "5 ноября 2024",
+      image: "https://cdn.poehali.dev/projects/ba3f271d-37f2-492b-aa9a-24bb7ae2734e/files/ea053663-7a3c-495b-aeb8-5a2d70cc5c98.jpg",
+      excerpt: "Самые актуальные украшения этого года"
+    }
+  ];
+
   const reviews = [
     {
       name: "Анна",
@@ -60,6 +128,25 @@ const Index = () => {
     }
   ];
 
+  const faq = [
+    {
+      question: "Как оформить заказ?",
+      answer: "Напишите нам в Instagram или Telegram с названием товара"
+    },
+    {
+      question: "Доставка по России?",
+      answer: "Да, доставляем по всей России курьерской службой"
+    },
+    {
+      question: "Можно ли вернуть товар?",
+      answer: "Да, в течение 14 дней при сохранении товарного вида"
+    },
+    {
+      question: "Изготовление на заказ?",
+      answer: "Да, можем создать украшение по вашему эскизу"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-border">
@@ -69,8 +156,11 @@ const Index = () => {
             <a href="#collection" className="hidden md:block text-sm hover:text-secondary transition-colors">
               Коллекция
             </a>
-            <a href="#about" className="hidden md:block text-sm hover:text-secondary transition-colors">
-              О нас
+            <a href="#process" className="hidden md:block text-sm hover:text-secondary transition-colors">
+              Как мы работаем
+            </a>
+            <a href="#blog" className="hidden md:block text-sm hover:text-secondary transition-colors">
+              Блог
             </a>
             <a href="#contact" className="text-sm hover:text-secondary transition-colors">
               Контакты
@@ -172,6 +262,7 @@ const Index = () => {
                   />
                 </div>
                 <div className="p-6 text-center">
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{item.category}</p>
                   <h4 className="text-xl font-normal mb-2">{item.name}</h4>
                   <p className="text-secondary text-lg font-semibold">{item.price}</p>
                 </div>
@@ -181,7 +272,58 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 bg-white">
+      <section id="process" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h3 className="text-4xl md:text-5xl font-normal text-center mb-16 tracking-wider">
+            КАК МЫ РАБОТАЕМ
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {process.map((step, index) => (
+              <div key={index} className="text-center space-y-4 relative">
+                {index < process.length - 1 && (
+                  <div className="hidden md:block absolute top-10 left-1/2 w-full h-0.5 bg-secondary/30 z-0"></div>
+                )}
+                <div className="w-20 h-20 mx-auto bg-secondary rounded-full flex items-center justify-center relative z-10">
+                  <Icon name={step.icon} size={32} className="text-white" />
+                </div>
+                <h4 className="text-lg font-normal">{step.title}</h4>
+                <p className="text-sm text-muted-foreground">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" className="py-20 bg-primary/10">
+        <div className="container mx-auto px-4">
+          <h3 className="text-4xl md:text-5xl font-normal text-center mb-16 tracking-wider">
+            БЛОГ
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {blog.map((post, index) => (
+              <Card key={index} className="overflow-hidden bg-white border-none soft-shadow hover-lift">
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6 space-y-3">
+                  <p className="text-xs text-muted-foreground">{post.date}</p>
+                  <h4 className="text-xl font-normal">{post.title}</h4>
+                  <p className="text-sm text-muted-foreground">{post.excerpt}</p>
+                  <Button variant="link" className="p-0 h-auto text-secondary">
+                    Читать далее →
+                  </Button>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h3 className="text-4xl md:text-5xl font-normal mb-8 tracking-wider">
@@ -196,14 +338,14 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-primary/10">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h3 className="text-4xl md:text-5xl font-normal text-center mb-16 tracking-wider">
             ОТЗЫВЫ
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {reviews.map((review, index) => (
-              <Card key={index} className="p-6 bg-white border-none soft-shadow text-center space-y-4">
+              <Card key={index} className="p-6 bg-primary/5 border-none soft-shadow text-center space-y-4">
                 <div className="flex justify-center gap-1">
                   {[...Array(review.rating)].map((_, i) => (
                     <Icon key={i} name="Star" size={16} className="fill-secondary text-secondary" />
@@ -211,6 +353,22 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground italic">"{review.text}"</p>
                 <p className="font-semibold">{review.name}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-primary/10">
+        <div className="container mx-auto px-4">
+          <h3 className="text-4xl md:text-5xl font-normal text-center mb-16 tracking-wider">
+            ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+          </h3>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faq.map((item, index) => (
+              <Card key={index} className="p-6 bg-white border-none soft-shadow">
+                <h4 className="text-lg font-normal mb-2">{item.question}</h4>
+                <p className="text-sm text-muted-foreground">{item.answer}</p>
               </Card>
             ))}
           </div>
@@ -225,21 +383,21 @@ const Index = () => {
           <div className="flex justify-center gap-6 mb-8">
             <a 
               href="#" 
-              className="w-14 h-14 flex items-center justify-center rounded-full bg-primary hover:bg-primary/80 transition-colors group"
+              className="w-14 h-14 flex items-center justify-center rounded-full bg-secondary hover:bg-secondary/80 transition-colors group"
             >
-              <Icon name="Instagram" size={24} className="text-primary-foreground" />
+              <Icon name="Instagram" size={24} className="text-white" />
             </a>
             <a 
               href="#" 
-              className="w-14 h-14 flex items-center justify-center rounded-full bg-primary hover:bg-primary/80 transition-colors group"
+              className="w-14 h-14 flex items-center justify-center rounded-full bg-secondary hover:bg-secondary/80 transition-colors group"
             >
-              <Icon name="Send" size={24} className="text-primary-foreground" />
+              <Icon name="Send" size={24} className="text-white" />
             </a>
             <a 
               href="#" 
-              className="w-14 h-14 flex items-center justify-center rounded-full bg-primary hover:bg-primary/80 transition-colors group"
+              className="w-14 h-14 flex items-center justify-center rounded-full bg-secondary hover:bg-secondary/80 transition-colors group"
             >
-              <Icon name="Mail" size={24} className="text-primary-foreground" />
+              <Icon name="Mail" size={24} className="text-white" />
             </a>
           </div>
           <p className="text-muted-foreground">
